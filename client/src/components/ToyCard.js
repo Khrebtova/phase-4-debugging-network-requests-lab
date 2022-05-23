@@ -17,7 +17,7 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
     const updateObj = {
       likes: toy.likes + 1,
     };
-
+    console.log(updateObj);
     fetch(`/toys/${id}`, {
       method: "PATCH",
       headers: {
